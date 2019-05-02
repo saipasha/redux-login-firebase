@@ -19,4 +19,8 @@ export function googleLogin(){
     .catch(e=>console.log(e))
 }
 
+// export function googleLogout(){
+//   return firebase.auth().signOut()
+// }
+
 export default firebase 

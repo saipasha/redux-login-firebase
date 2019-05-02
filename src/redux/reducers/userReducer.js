@@ -6,6 +6,8 @@ function data(state={}, action) {
       return action.data
     case "ALREADY_LOGGED":
       return action.data
+    case "REMOVE_USER_DATA":
+      return {}
     default: 
       return state
   }
@@ -13,10 +15,10 @@ function data(state={}, action) {
 
 function session(state=false, action){
   switch(action.type) {
-    case "SET_LOGGED_USER":
-      return true
+    case "SET_TO_TRUE": // More common to specify buuuut you could save one of these and send the boolean using just one case
+      return action.session
     case "SET_TO_FALSE":
-      return false
+      return action.session
     default:
       return state
   }
