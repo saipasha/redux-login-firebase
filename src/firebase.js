@@ -2,12 +2,7 @@ import firebase from 'firebase'
 
 // Initialize Firebase
 let config = {
-  apiKey: "AIzaSyDO23claZOwIMS0p9IzLvjkk1PgkxZP9es",
-  authDomain: "fixteruser.firebaseapp.com",
-  databaseURL: "https://fixteruser.firebaseio.com",
-  projectId: "fixteruser",
-  storageBucket: "fixteruser.appspot.com",
-  messagingSenderId: "383842124894"
+  // ADD CONFIG FILE FROM FIREBASE 
 };
 
 firebase.initializeApp(config);
